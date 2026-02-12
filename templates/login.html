@@ -72,18 +72,18 @@
 
 <body class="bg-gray-50 flex justify-center items-center min-h-screen font-sans p-5">
 
-    {% with messages = get_flashed_messages(with_categories=true) %}
-    {% if messages %}
+    <!-- {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %} -->
     <div class="fixed top-5 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-md px-4">
-        {% for category, message in messages %}
+        <!-- {% for category, message in messages %} -->
         <div class="p-4 mb-4 text-sm text-white rounded-lg {{ 'bg-green-500' if category == 'success' else 'bg-red-500' }} shadow-lg transition-opacity duration-300"
             role="alert">
             <span class="font-medium">{{ message }}</span>
         </div>
-        {% endfor %}
+        <!-- {% endfor %} -->
     </div>
-    {% endif %}
-    {% endwith %}
+    <!-- {% endif %} -->
+    <!-- {% endwith %} -->
 
     <!-- Main Container -->
     <div class="bg-white rounded-[24px] shadow-2xl relative overflow-hidden w-[900px] max-w-full min-h-[600px] transition-all duration-300 group container-custom"
